@@ -1,0 +1,20 @@
+C:\Users\betin\OneDrive\Рабочий стол\CalculationByFormulas\CalculationByFormulas\bin\Debug\CalculationByFormulas.exe.config
+C:\Users\betin\OneDrive\Рабочий стол\CalculationByFormulas\CalculationByFormulas\bin\Debug\CalculationByFormulas.exe
+C:\Users\betin\OneDrive\Рабочий стол\CalculationByFormulas\CalculationByFormulas\bin\Debug\CalculationByFormulas.pdb
+C:\Users\betin\OneDrive\Рабочий стол\CalculationByFormulas\CalculationByFormulas\obj\Debug\CalculationByFormulas.csprojAssemblyReference.cache
+C:\Users\betin\OneDrive\Рабочий стол\CalculationByFormulas\CalculationByFormulas\obj\Debug\CalculationByFormulas.Form1.resources
+C:\Users\betin\OneDrive\Рабочий стол\CalculationByFormulas\CalculationByFormulas\obj\Debug\CalculationByFormulas.Properties.Resources.resources
+C:\Users\betin\OneDrive\Рабочий стол\CalculationByFormulas\CalculationByFormulas\obj\Debug\CalculationByFormulas.csproj.GenerateResource.cache
+C:\Users\betin\OneDrive\Рабочий стол\CalculationByFormulas\CalculationByFormulas\obj\Debug\CalculationByFormulas.csproj.CoreCompileInputs.cache
+C:\Users\betin\OneDrive\Рабочий стол\CalculationByFormulas\CalculationByFormulas\obj\Debug\CalculationByFormulas.exe
+C:\Users\betin\OneDrive\Рабочий стол\CalculationByFormulas\CalculationByFormulas\obj\Debug\CalculationByFormulas.pdb
+C:\Users\coldsys\Desktop\CalculationByFormulas\CalculationByFormulas\bin\Debug\CalculationByFormulas.exe.config
+C:\Users\coldsys\Desktop\CalculationByFormulas\CalculationByFormulas\bin\Debug\CalculationByFormulas.exe
+C:\Users\coldsys\Desktop\CalculationByFormulas\CalculationByFormulas\bin\Debug\CalculationByFormulas.pdb
+C:\Users\coldsys\Desktop\CalculationByFormulas\CalculationByFormulas\obj\Debug\CalculationByFormulas.csprojAssemblyReference.cache
+C:\Users\coldsys\Desktop\CalculationByFormulas\CalculationByFormulas\obj\Debug\CalculationByFormulas.Form1.resources
+C:\Users\coldsys\Desktop\CalculationByFormulas\CalculationByFormulas\obj\Debug\CalculationByFormulas.Properties.Resources.resources
+C:\Users\coldsys\Desktop\CalculationByFormulas\CalculationByFormulas\obj\Debug\CalculationByFormulas.csproj.GenerateResource.cache
+C:\Users\coldsys\Desktop\CalculationByFormulas\CalculationByFormulas\obj\Debug\CalculationByFormulas.csproj.CoreCompileInputs.cache
+C:\Users\coldsys\Desktop\CalculationByFormulas\CalculationByFormulas\obj\Debug\CalculationByFormulas.exe
+C:\Users\coldsys\Desktop\CalculationByFormulas\CalculationByFormulas\obj\Debug\CalculationByFormulas.pdb

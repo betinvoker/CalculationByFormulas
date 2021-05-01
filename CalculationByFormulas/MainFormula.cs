@@ -16,29 +16,31 @@ namespace CalculationByFormulas
         private double CH_latitude, CH_longitude, CH_height, heightMo, OH_latitude, OH_longitude, OH_height, heightNo, l1, l2;
         private double aM, a;
         private string[] inpShowData, outShowResult;
-        
-        public MainFormula(){ }
+
+        double hq, Bm;
+
+        //public MainFormula(){ }
         public MainFormula(double CH_latitude, double CH_longitude, double CH_height,
             double heightMo, double OH_latitude, double OH_longitude, double OH_height, double heightNo)
         {
-            this.CH_latitude = CH_latitude;
-            this.CH_longitude = CH_longitude;
+            this.CH_latitude = CH_latitude * (Math.PI / 180.0);
+            this.CH_longitude = CH_longitude * (Math.PI / 180.0);
             this.CH_height = CH_height;
             this.heightMo = heightMo;
 
-            this.OH_latitude = OH_latitude;
-            this.OH_longitude = OH_longitude;
+            this.OH_latitude = OH_latitude * (Math.PI / 180.0);
+            this.OH_longitude = OH_longitude * (Math.PI / 180.0);
             this.OH_height = OH_height;
             this.heightNo = heightNo;
 
             inpShowData = new string[]
             {
-                "СН широта: " + this.CH_latitude + " град.",
-                "СН долгота: " + this.CH_longitude + " град.",
+                "СН широта: " + CH_latitude + " град.",
+                "СН долгота: " + CH_longitude + " град.",
                 "СН высота расположения: " + this.CH_height + " км.",
                 "СН высота над уровнем моря: " + this.heightMo + " км.",
-                "ОН широта: " + this.OH_latitude + " град.",
-                "ОН долгота: " + this.OH_longitude + " град.",
+                "ОН широта: " + OH_latitude + " град.",
+                "ОН долгота: " + OH_longitude + " град.",
                 "ОН высота расположения: " + this.OH_height + " км.",
                 "ОН высота над уровнем моря: " + this.heightNo + " км.",
             };
@@ -147,6 +149,17 @@ namespace CalculationByFormulas
             Formula_22 So = new Formula_22(this.l1, this.l2, this.OH_height, Bm.Result());
             Formula_23 Go = new Formula_23(this.l1, this.l2, this.OH_height, Bm.Result());
             Formula_24 r_onO = new Formula_24(this.l1, this.l2, this.OH_height, Bm.Result());
+            Formula_25 r_bnO = new Formula_25(this.l1, this.l2, this.OH_height, Bm.Result());
+            Formula_26 r_ob = new Formula_26(r_onO.Result(), r_bnO.Result());
+            Formula_27 lmax_o = new Formula_27(r_onO.Result());
+            Formula_28 lmin_o = new Formula_28(r_bnO.Result());
+            Formula_29 St = new Formula_29(this.l1, this.l2, this.OH_height, hq, Bm.Result());
+            Formula_30 Gt = new Formula_30(this.l1, this.l2, this.OH_height, Bm.Result());
+            Formula_31 r_opM = new Formula_31(this.l1, this.l2, this.OH_height, Bm.Result());
+            Formula_32 r_vpM = new Formula_32(this.l1, this.l2, this.OH_height, Bm.Result());
+            Formula_33 rM = new Formula_33(r_vpM.Result(), r_opM.Result());
+            Formula_34 l_maxT = new Formula_34(r_opM.Result());
+            Formula_35 l_minT = new Formula_35(r_vpM.Result());
 
             outShowResult = new string[] {
                 title_1_4,
@@ -157,6 +170,60 @@ namespace CalculationByFormulas
                 So.Show(),
                 Go.Show(),
                 r_onO.Show(),
+                r_bnO.Show(),
+                r_ob.Show(),
+                lmax_o.Show(),
+                lmin_o.Show(),
+                St.Show(),
+                Gt.Show(),
+                r_opM.Show(),
+                r_vpM.Show(),
+                rM.Show(),
+                l_maxT.Show(),
+                l_minT.Show(),
+            };
+        }
+        //  Тестовый класс
+        public MainFormula(double l1 = 3.3d, double l2 = 2.5d, double OH_height = 3.3d, double hq = 20d, double Bm = 30d)
+        {
+            this.l1 = l1;
+            this.l2 = l2;
+            this.OH_height = OH_height;
+            this.hq = hq;
+            this.Bm = Bm;
+
+            Formula_22 So = new Formula_22(this.l1, this.l2, this.OH_height, Bm);
+            Formula_23 Go = new Formula_23(this.l1, this.l2, this.OH_height, Bm);
+            Formula_24 r_onO = new Formula_24(this.l1, this.l2, this.OH_height, Bm);
+            Formula_25 r_bnO = new Formula_25(this.l1, this.l2, this.OH_height, Bm);
+            Formula_26 r_ob = new Formula_26(r_onO.Result(), r_bnO.Result());
+            Formula_27 lmax_o = new Formula_27(r_onO.Result());
+            Formula_28 lmin_o = new Formula_28(r_bnO.Result());
+            Formula_29 St = new Formula_29(this.l1, this.l2, this.OH_height, this.hq, Bm);
+            Formula_30 Gt = new Formula_30(this.l1, this.l2, this.OH_height, Bm);
+            Formula_31 r_opM = new Formula_31(this.l1, this.l2, this.OH_height, Bm);
+            Formula_32 r_vpM = new Formula_32(this.l1, this.l2, this.OH_height, Bm);
+            Formula_33 rM = new Formula_33(r_vpM.Result(), r_opM.Result());
+            Formula_34 l_maxT = new Formula_34(r_opM.Result());
+            Formula_35 l_minT = new Formula_35(r_vpM.Result());
+
+
+            outShowResult = new string[] {
+                title_1_4,
+                So.Show(),
+                Go.Show(),
+                r_onO.Show(),
+                r_bnO.Show(),
+                r_ob.Show(),
+                lmax_o.Show(),
+                lmin_o.Show(),
+                St.Show(),
+                Gt.Show(),
+                r_opM.Show(),
+                r_vpM.Show(),
+                rM.Show(),
+                l_maxT.Show(),
+                l_minT.Show(),
             };
         }
 

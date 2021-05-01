@@ -19,19 +19,19 @@ namespace CalculationByFormulas
 
         private void button_Result_Click(object sender, EventArgs e)
         {
-            double CH_latitude = Check_CheckBox(checkBox_CH_latitude, Convert.ToDouble(textBox_CH_latitude.Text));
-            double CH_longitude = Check_CheckBox(checkBox_CH_longitude, Convert.ToDouble(textBox_CH_longitude.Text));
-            double CH_height = Convert.ToDouble(textBox_CH_height.Text);
-            double heightMo = Convert.ToDouble(textBox_heightMo.Text);
+            //double CH_latitude = Check_CheckBox(checkBox_CH_latitude, Convert.ToDouble(textBox_CH_latitude.Text));
+            //double CH_longitude = Check_CheckBox(checkBox_CH_longitude, Convert.ToDouble(textBox_CH_longitude.Text));
+            //double CH_height = Convert.ToDouble(textBox_CH_height.Text);
+            //double heightMo = Convert.ToDouble(textBox_heightMo.Text);
 
-            double OH_latitude = Check_CheckBox(checkBox_OH_latitude, Convert.ToDouble(textBox_OH_latitude.Text));
-            double OH_longitude = Check_CheckBox(checkBox_OH_longitude, Convert.ToDouble(textBox_OH_longitude.Text));
-            double OH_height = Convert.ToDouble(textBox_OH_height.Text);
-            double heightNo = Convert.ToDouble(textBox_heightNo.Text);
+            //double OH_latitude = Check_CheckBox(checkBox_OH_latitude, Convert.ToDouble(textBox_OH_latitude.Text));
+            //double OH_longitude = Check_CheckBox(checkBox_OH_longitude, Convert.ToDouble(textBox_OH_longitude.Text));
+            //double OH_height = Convert.ToDouble(textBox_OH_height.Text);
+            //double heightNo = Convert.ToDouble(textBox_heightNo.Text);
 
             double l1, l2;
-            
-            if (Double.TryParse(textBox_L1.Text, out l1) == true || Double.TryParse(textBox_L2.Text, out l2) == true)
+
+            /*if (Double.TryParse(textBox_L1.Text, out l1) == true || Double.TryParse(textBox_L2.Text, out l2) == true)
             {
                 l1 = Convert.ToDouble(textBox_L1.Text);
                 l2 = Convert.ToDouble(textBox_L2.Text);
@@ -46,7 +46,9 @@ namespace CalculationByFormulas
                 MainFormula mainFormula = new MainFormula(CH_latitude, CH_longitude, CH_height, heightMo, 
                     OH_latitude, OH_longitude, OH_height, heightNo);
                 ShowResult(mainFormula);
-            }
+            }*/
+            MainFormula mainFormula = new MainFormula();
+            ShowResult(mainFormula);
         }
         private void button_Clear_Click(object sender, EventArgs e)
         {
@@ -103,7 +105,7 @@ namespace CalculationByFormulas
             if (richTextBox.Text != "")
                 richTextBox.Text += "\n";
 
-            richTextBox_Entered_Data.Text = mainFormula.ShowInputData();
+            //richTextBox_Entered_Data.Text = mainFormula.ShowInputData();
 
             richTextBox.Text += mainFormula.ShowOutputData();
         }

@@ -606,7 +606,7 @@ namespace CalculationByFormulas
             this.Controls.Add(this.richTextBox);
             this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.MaximumSize = new System.Drawing.Size(1289, 1090);
+            this.MaximumSize = new System.Drawing.Size(1289, 900);
             this.MinimumSize = new System.Drawing.Size(1289, 657);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

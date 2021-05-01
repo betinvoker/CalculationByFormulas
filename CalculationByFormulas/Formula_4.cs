@@ -22,7 +22,7 @@ namespace CalculationByFormulas
             this.hMo = hMo;
             this.hNo = hNo;
             this.D = D;
-            this.O = O;
+            this.O = O * (Math.PI / 180.0);
 
             Dn = Formula(hMo, hNo, D, O);
         }
@@ -34,7 +34,7 @@ namespace CalculationByFormulas
                 return Math.Sqrt(Math.Pow(GlobalVariables.R3 + hMo, 2) +
                         Math.Pow(GlobalVariables.R3 + hNo, 2) - 2 *
                         (GlobalVariables.R3 + hMo) * (GlobalVariables.R3 + hNo) *
-                        Math.Cos(O));
+                        (Math.Cos(O) * (Math.PI / 180.0)));
         }
         public double Result()
         {

@@ -20,7 +20,7 @@ namespace CalculationByFormulas
         }
         private double Formula(double CH_height, double OH_height)
         {
-            return Math.Sqrt((2 * GlobalVariables.R3) * (Math.Sqrt(OH_height) * Math.Sqrt(CH_height)));
+            return Math.Sqrt((2 * GlobalVariables.R3) * (Math.Sqrt(OH_height) + Math.Sqrt(CH_height)));
         }
         public double Result()
         {

@@ -8,22 +8,20 @@ namespace CalculationByFormulas
 {
     class Formula_22
     {
-        private double l1, l2, OH_height;
-        private double So;
-        private double? Bm;
+        private double l1, l2, OH_height, Bm, So;
         public Formula_22(double l1, double l2, double OH_height, double Bm)
         {
             this.l1 = l1;
             this.l2 = l2;
             this.OH_height = OH_height;
-            this.Bm = Bm;
+            this.Bm = Bm * (Math.PI / 180.0);
 
-            So = Formula(l1, l2, OH_height, Bm);
+            So = Formula(this.l1, this.l2, this.OH_height, this.Bm);
         }
         private double Formula(double l1, double l2, double OH_height, double Bm)
         {
-            return Math.Sqrt(Math.Pow(l1, 2) + Math.Pow(l2, 2)) * (OH_height * Math.Cos(Bm) + 
-                (l1 * l2 * Math.Sin(Bm)) / Math.Sqrt(Math.Pow(l1, 2) + Math.Pow(l2, 2)));
+            return Math.Sqrt(Math.Pow(l1, 2) + Math.Pow(l2, 2)) * (OH_height * Math.Cos(Bm)) + 
+                (l1 * l2 * Math.Sin(Bm)) / Math.Sqrt(Math.Pow(l1, 2) + Math.Pow(l2, 2));
         }
         public double Result()
         {

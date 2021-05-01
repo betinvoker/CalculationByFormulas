@@ -11,16 +11,19 @@ namespace CalculationByFormulas
         double CH_latitude, OH_latitude, O, A;
         public Formula_12(double CH_latitude, double OH_latitude, double O)
         {
-            this.CH_latitude = CH_latitude;
-            this.OH_latitude = OH_latitude;
-            this.O = O;
+            this.CH_latitude = CH_latitude * (Math.PI / 180.0);
+            this.OH_latitude = OH_latitude * (Math.PI / 180.0);
+            this.O = O * (Math.PI / 180.0);
 
             A = Formula(this.CH_latitude, this.OH_latitude, this.O);
         }
         private double Formula(double CH_latitude, double OH_latitude, double O)
         {
-            return Math.Acos((Math.Sin(CH_latitude) - Math.Cos(O) * Math.Sin(OH_latitude)) /
-                (Math.Sin(O) * Math.Cos(OH_latitude)));
+            return Math.Acos(((Math.Sin(CH_latitude) * (Math.PI / 180.0)) 
+                - (Math.Cos(O) * (Math.PI / 180.0))
+                * (Math.Sin(OH_latitude)) * (Math.PI / 180.0))
+                / ((Math.Sin(O) * (Math.PI / 180.0))
+                * (Math.Cos(OH_latitude) * (Math.PI / 180.0))));
         }
         public double Result() { return A; }
         public string Show()

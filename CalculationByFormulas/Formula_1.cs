@@ -30,7 +30,9 @@ namespace CalculationByFormulas
         private double Formula(double CH_latitude, double CH_longitude, double OH_latitude, double OH_longitude)
         {
             double O;
-            O = Math.Acos(Math.Sin(CH_latitude) * Math.Sin(OH_latitude) + Math.Cos(CH_longitude) * Math.Cos(OH_longitude) * Math.Cos(CH_longitude - OH_longitude));
+
+            O = Math.Acos(Math.Sin(CH_latitude) * Math.Sin(OH_latitude) + Math.Cos(CH_latitude) 
+                * Math.Cos(OH_latitude) * Math.Cos(CH_longitude - OH_longitude)) * (180.0 / Math.PI);
 
             return O;
         }

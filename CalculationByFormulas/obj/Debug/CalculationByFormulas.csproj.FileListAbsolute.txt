@@ -18,3 +18,13 @@ C:\Users\coldsys\Desktop\CalculationByFormulas\CalculationByFormulas\obj\Debug\C
 C:\Users\coldsys\Desktop\CalculationByFormulas\CalculationByFormulas\obj\Debug\CalculationByFormulas.csproj.CoreCompileInputs.cache
 C:\Users\coldsys\Desktop\CalculationByFormulas\CalculationByFormulas\obj\Debug\CalculationByFormulas.exe
 C:\Users\coldsys\Desktop\CalculationByFormulas\CalculationByFormulas\obj\Debug\CalculationByFormulas.pdb
+C:\Users\coldsys\Desktop\CalculationByFormulas-main\CalculationByFormulas\bin\Debug\CalculationByFormulas.exe.config
+C:\Users\coldsys\Desktop\CalculationByFormulas-main\CalculationByFormulas\bin\Debug\CalculationByFormulas.exe
+C:\Users\coldsys\Desktop\CalculationByFormulas-main\CalculationByFormulas\bin\Debug\CalculationByFormulas.pdb
+C:\Users\coldsys\Desktop\CalculationByFormulas-main\CalculationByFormulas\obj\Debug\CalculationByFormulas.csprojAssemblyReference.cache
+C:\Users\coldsys\Desktop\CalculationByFormulas-main\CalculationByFormulas\obj\Debug\CalculationByFormulas.Form1.resources
+C:\Users\coldsys\Desktop\CalculationByFormulas-main\CalculationByFormulas\obj\Debug\CalculationByFormulas.Properties.Resources.resources
+C:\Users\coldsys\Desktop\CalculationByFormulas-main\CalculationByFormulas\obj\Debug\CalculationByFormulas.csproj.GenerateResource.cache
+C:\Users\coldsys\Desktop\CalculationByFormulas-main\CalculationByFormulas\obj\Debug\CalculationByFormulas.csproj.CoreCompileInputs.cache
+C:\Users\coldsys\Desktop\CalculationByFormulas-main\CalculationByFormulas\obj\Debug\CalculationByFormulas.exe
+C:\Users\coldsys\Desktop\CalculationByFormulas-main\CalculationByFormulas\obj\Debug\CalculationByFormulas.pdb
